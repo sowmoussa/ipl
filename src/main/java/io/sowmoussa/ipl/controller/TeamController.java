@@ -1,5 +1,6 @@
 package io.sowmoussa.ipl.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,7 @@ import io.sowmoussa.ipl.repository.MatchRepository;
 import io.sowmoussa.ipl.repository.TeamRepository;
 
 @RestController
+@CrossOrigin // allows others domain to make a call to this api
 public class TeamController {
     
     private TeamRepository teamRepository;
